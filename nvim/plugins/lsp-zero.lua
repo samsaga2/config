@@ -44,6 +44,7 @@ return {
                 ["<C-Space>"] = cmp.mapping.complete(),
             },
             sources = {
+                { name = "windsurf" },
                 { name = "nvim_lsp" },
                 { name = "buffer" },
             },
