@@ -1,11 +1,9 @@
 return {
-    "Exafunction/windsurf.nvim",
-    dependencies = {
-        "nvim-lua/plenary.nvim",
-        "hrsh7th/nvim-cmp",
-    },
+    'zbirenbaum/copilot.lua',
     config = function()
-        require("codeium").setup({
+        require('copilot').setup({
+            suggestion = { enabled = false },
+            panel = { enabled = false },
         })
-    end
+    end,
 }
