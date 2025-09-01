@@ -18,11 +18,10 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.hlsearch = false
 vim.opt.autochdir = true
 vim.opt.swapfile = false
+vim.opt.expandtab = true
 
 local config_path = vim.fn.stdpath("config")
 package.path = package.path .. ";" .. config_path .. "/?.lua;" .. config_path .. "/?/init.lua"
 
 require("config.lazy")
 require("config.mappings")
-
--- todo https://github.com/rcarriga/nvim-dap-ui

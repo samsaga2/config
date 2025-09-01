@@ -4,9 +4,12 @@ return {
         "nvim-lua/plenary.nvim"
     },
     config = function()
-        require("neogit").setup()
-        vim.keymap.set("n", "<leader>gs", "<cmd>Neogit<CR>", 
-        { desc = "Git status" })
+        require("neogit").setup({
+            kind = "split",
+            integrations = { diffview = true },
+        })
+        vim.keymap.set("n", "<leader>gg", "<cmd>Neogit<CR>", { desc = "Git status" })
+        vim.keymap.set("n", "<leader>dc", "<cmd>DiffviewClose<CR>", { desc = "Cerrar Diffview" })
     end,
 }
 
