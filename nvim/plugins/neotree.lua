@@ -10,8 +10,7 @@ return {
         },
         lazy = false,
         config = function()
-            vim.keymap.set("n", "<leader>pt", "<cmd>Neotree<CR>", 
-            { desc = "Project tree" })
+            vim.keymap.set("n", "<leader>pt", "<cmd>Neotree<CR>", { desc = "Project tree" })
         end,
     }
 }
