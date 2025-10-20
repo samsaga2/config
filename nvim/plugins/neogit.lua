@@ -1,7 +1,8 @@
 return {
     "https://github.com/NeogitOrg/neogit",
     dependencies = {
-        "nvim-lua/plenary.nvim"
+        "nvim-lua/plenary.nvim",
+        "sindrets/diffview.nvim"
     },
     config = function()
         require("neogit").setup({
