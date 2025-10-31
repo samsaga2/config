@@ -76,7 +76,7 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 (after! gtpel
-  (set! gptel-api-key "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"))
+  (set! gptel-api-key (getenv "OPENAPI_KEY")))
 
 (map!
  (:map 'override
